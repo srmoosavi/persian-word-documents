@@ -12,9 +12,13 @@
 
 ## نمونه خروجی
 
-| نامه رسمی | راهنمای انتشار (صفحه ۱) | راهنمای انتشار (صفحه ۲) |
-|---|---|---|
-| ![نامه نمونه](docs/images/sample-letter.png) | ![صفحه ۱](docs/images/release-guide-page-1.png) | ![صفحه ۲](docs/images/release-guide-page-2.png) |
+| نامه رسمی | راهنمای انتشار (صفحه ۱) | راهنمای انتشار (صفحه ۲) | راهنمای انتشار (صفحه ۳) |
+|---|---|---|---|
+| ![نامه نمونه](docs/images/sample-letter.png) | ![صفحه ۱](docs/images/release-guide-page-1.png) | ![صفحه ۲](docs/images/release-guide-page-2.png) | ![صفحه ۳](docs/images/release-guide-page-3.png) |
+
+نمودارها از HTML راست‌به‌چپ ([`examples/figure-template.html`](examples/figure-template.html)) و با اسکریپت `scripts/render_figure.py` ساخته می‌شوند:
+
+![نمونه نمودار راست‌به‌چپ](docs/images/figure-template.png)
 
 کد هر دو نمونه در پوشه [`examples/`](examples/) است. پیش‌نمایش‌ها با LibreOffice و فونت جایگزین ساخته شده‌اند؛ در Word با فونت‌های اصلی، صفحه‌ها همین شکل را دارند و فقط محل شکستن سطرها کمی فرق می‌کند.
 

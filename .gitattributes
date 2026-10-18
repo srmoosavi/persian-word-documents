@@ -1,0 +1,15 @@
+# Keep scripts runnable on every platform (a CRLF shebang breaks bash on Linux/macOS)
+* text=auto
+*.sh   text eol=lf
+*.py   text eol=lf
+*.js   text eol=lf
+*.md   text eol=lf
+*.yml  text eol=lf
+*.json text eol=lf
+*.html text eol=lf
+
+# Binary outputs and images
+*.docx binary
+*.pdf  binary
+*.png  binary
+*.zip  binary
