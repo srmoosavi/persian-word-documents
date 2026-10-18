@@ -1,0 +1,46 @@
+name: Formatting bug / اشکال قالب‌بندی
+description: Something in a generated Persian Word document looks wrong. / چیزی در سند Word فارسی درست نمایش داده نمی‌شود.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. Please remove confidential content from any file you attach.
+        با سپاس از گزارش شما. لطفاً پیش از پیوست فایل، اطلاعات محرمانه را حذف کنید.
+  - type: textarea
+    id: what
+    attributes:
+      label: What is wrong? / چه چیزی اشتباه است؟
+      description: e.g. heading left-aligned, table starts from the left, path reversed, Latin digits.
+    validations:
+      required: true
+  - type: textarea
+    id: files
+    attributes:
+      label: Sample .docx and a screenshot from Word / فایل نمونه و تصویر از Word
+      description: Drag and drop the .docx and a screenshot taken in Microsoft Word.
+    validations:
+      required: true
+  - type: input
+    id: word
+    attributes:
+      label: Word version and OS / نسخه Word و سیستم‌عامل
+      placeholder: Word 365 (2409), Windows 11
+    validations:
+      required: true
+  - type: input
+    id: fonts
+    attributes:
+      label: Fonts used, and are they installed? / فونت‌ها و وضعیت نصب
+      placeholder: B Nazanin + B Titr, installed
+  - type: input
+    id: version
+    attributes:
+      label: Skill version / نسخه Skill
+      placeholder: 0.9.0
+    validations:
+      required: true
+  - type: textarea
+    id: prompt
+    attributes:
+      label: Request given to Claude (optional) / درخواست داده‌شده به Claude (اختیاری)

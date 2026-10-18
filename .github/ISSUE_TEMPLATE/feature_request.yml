@@ -1,0 +1,18 @@
+name: Suggestion / پیشنهاد
+description: A new rule, document type, font path or improvement. / قاعده، نوع سند، مسیر فونت یا بهبود جدید.
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: What do you need? / به چه چیزی نیاز دارید؟
+    validations:
+      required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: An example document or screenshot (optional) / نمونه سند یا تصویر (اختیاری)
+  - type: textarea
+    id: why
+    attributes:
+      label: Why does it matter? / چرا مهم است؟

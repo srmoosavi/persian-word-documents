@@ -1,0 +1,39 @@
+<!doctype html>
+<!--
+  RTL figure template for scripts/render_figure.py (persian-word-documents, MIT).
+  Render:  python scripts/render_figure.py examples/figure-template.html figure.png
+  Fonts: uses locally installed fonts (Vazirmatn, then Tahoma). No network requests.
+  Rules: title states the finding; one accent colour; flows and timelines run right → left.
+-->
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: Vazirmatn, Tahoma, sans-serif; direction: rtl; color: #1E2A36; background: #fff; }
+  .fig { width: 1000px; padding: 24px 28px 28px; }
+  .t { font-size: 24px; font-weight: 800; color: #1F3A5F; margin: 0 0 4px; }
+  .s { font-size: 15px; color: #5B6B7B; margin: 0 0 20px; }
+  .row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; }
+  .step { height: 90px; color: #fff; display: flex; flex-direction: column; justify-content: center; align-items: center;
+          text-align: center; margin-left: -14px; padding: 0 26px 0 30px; background: #1F3A5F;
+          clip-path: polygon(100% 0, calc(100% - 22px) 50%, 100% 100%, 22px 100%, 0 50%, 22px 0); }
+  .step:first-child { clip-path: polygon(100% 0, 100% 100%, 22px 100%, 0 50%, 22px 0); }
+  .step.hot { background: #1C7C7D; }
+  .step small { font-size: 13px; opacity: .85; } .step b { font-size: 17px; }
+  code { direction: ltr; unicode-bidi: isolate; font-family: Consolas, monospace; }
+</style>
+</head>
+<body>
+<div class="fig">
+  <p class="t">چهار گام، از متن تا سند تأییدشده</p>
+  <p class="s">نمونه نمودار جریان راست‌به‌چپ؛ گام نخست در سمت راست است</p>
+  <div class="row">
+    <div class="step"><small>گام ۱</small><b>متن و جدول‌ها</b></div>
+    <div class="step"><small>گام ۲</small><b>انتخاب فونت</b></div>
+    <div class="step"><small>گام ۳</small><b>ساخت با <code>fa_docx.js</code></b></div>
+    <div class="step hot"><small>گام ۴</small><b>بازبینی صفحات</b></div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,8 @@
+node_modules/
+.preview-fonts/
+dist/
+examples/minimal-letter.docx
+examples/*.pdf
+examples/*-page-*.png
+*.log
+.DS_Store
