@@ -17,6 +17,6 @@
     "example": "node examples/minimal.js"
   },
   "dependencies": {
-    "docx": "9.7.1"
+    "docx": "9.11.0"
   }
 }
