@@ -11,6 +11,15 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and 
 - README sample section now shows all three pages of the release guide and a rendered RTL figure.
 - README notes the `docx` versions the helper module is tested with (9.7.1 and 9.11.0).
 
+### Changed
+
+- `docx` 9.7.1 → 9.11.0 (all tests pass; generated documents unchanged).
+- GitHub Actions: `actions/checkout` and `actions/setup-node` v4 → v7.
+
+### Security
+
+- `main` is protected against deletion and force pushes.
+
 ## [0.9.0] — 2026-10-18 (pre-release)
 
 First public pre-release, for feedback before 1.0.
